@@ -65,15 +65,22 @@ with col0b:
 
 # 一些通用的 UI 压缩样式
 if is_mobile:
-    MOBILE_TITLE_SIZE = "18px"
+    MOBILE_TITLE_SIZE = "28px"
     st.markdown(
-        """
-        <style>
-        .block-container { padding-top: 2.5rem; padding-bottom:0.6rem; }
-        .stDataFrame { font-size: 10px; }
-        div[data-testid="stHorizontalBlock"] { overflow-x: auto; }
-        </style>
-        """,
+        f"""
+           <style>
+           .block-container {{ padding-top: 2.3rem; padding-bottom: 0.6rem; }}
+           .stDataFrame {{ font-size: 10px; }}
+           div[data-testid="stHorizontalBlock"] {{ overflow-x: auto; }}
+
+           .block-container h1 {{
+               font-size: {MOBILE_TITLE_SIZE};
+               line-height: 1.28;
+               margin: 10px 0 6px;
+               font-weight: 700;
+           }}
+           </style>
+           """,
         unsafe_allow_html=True,
     )
 
@@ -451,5 +458,6 @@ st.download_button(
     file_name="产品到货_连续事件条_月历_HTML打包.zip",
     mime="application/zip"
 )
+
 
 
