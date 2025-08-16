@@ -69,7 +69,7 @@ if is_mobile:
     st.markdown(
         f"""
            <style>
-           .block-container {{ padding-top: 0.8rem; padding-bottom: 0.6rem; }}
+           .block-container {{ padding-top: 2.5rem; padding-bottom: 0.6rem; }}
            .stDataFrame {{ font-size: 10px; }}
            div[data-testid="stHorizontalBlock"] {{ overflow-x: auto; }}
 
@@ -458,6 +458,7 @@ st.download_button(
     file_name="产品到货_连续事件条_月历_HTML打包.zip",
     mime="application/zip"
 )
+
 
 
 
