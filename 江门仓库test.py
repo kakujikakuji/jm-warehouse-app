@@ -69,8 +69,8 @@ if is_mobile:
         """
         <style>
         /* 压缩全局内边距，表格字号 */
-        .block-container { padding-top: 0.8rem; padding-bottom:0.6rem; }
-        .stDataFrame { font-size: 12px; }
+        .block-container { padding-top: 1.6rem; padding-bottom:0.6rem; }
+        .stDataFrame { font-size: 10px; }
         /* 让 dataframe 有更友好的横向滑动 */
         div[data-testid="stHorizontalBlock"] { overflow-x: auto; }
         </style>
@@ -452,3 +452,4 @@ st.download_button(
     file_name="产品到货_连续事件条_月历_HTML打包.zip",
     mime="application/zip"
 )
+
